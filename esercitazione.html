@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoVestiti - Abbigliamento Sostenibile</title>
+    <link rel="stylesheet" type="text/css" href="stile.css">
+</head>
+<body>
+
+    <img src="EcoVestiti.jpg" alt="Logo EcoVestiti" width="120" align="left">
+
+    <h1>Benvenuti in EcoVestiti!</h1>
+    <p>Siamo un'azienda che produce e vende vestiti 100% sostenibili, nel totale rispetto della natura.</p>
+
+    <br clear="all">
+
+    <p style="background-color: #2e7d32; padding: 14px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <a href="#informazioni" style="color: white; padding: 0 15px;">Perché sceglierci?</a> | 
+        <a href="#listino" style="color: white; padding: 0 15px;">Il nostro listino</a> | 
+        <a href="#registrazione" style="color: white; padding: 0 15px;">Registrati / Contatti</a>
+    </p>
+
+    <hr> 
+
+    <h2 id="informazioni">Perché sceglierci?</h2>
+    <p>Scegliere la nostra azienda significa proteggere il pianeta. Ecco come lo facciamo:</p>
+    
+    <div style="width: fit-content; margin: 0 auto;">
+        <ul>
+            <li>Tessuti naturali e riciclati di alta qualità</li>
+            <li>Colori ecologici privi di sostanze chimiche nocive</li>
+            <li>Processi produttivi a zero sprechi di acqua</li>
+        </ul>
+    </div>
+
+    <h2 id="listino">Il nostro listino prezzi</h2>
+    
+    <table>
+        <tr>
+            <th>Anteprima</th>
+            <th>Prodotto</th>
+            <th>Materiale</th>
+            <th>Prezzo</th>
+        </tr>
+        <tr>
+            <td><img src="maglietta.webp" alt="Maglietta Base" width="60"></td>
+            <td>Maglietta Base</td>
+            <td>Cotone Organico</td>
+            <td>10 Euro</td>
+        </tr>
+        <tr>
+            <td><img src="felpa.webp" alt="Felpa con Cappuccio" width="60"></td>
+            <td>Felpa con Cappuccio</td>
+            <td>Cotone Riciclato</td>
+            <td>35 Euro</td>
+        </tr>
+        <tr>
+            <td><img src="pantalone.jpg" alt="Pantaloni Casual" width="60"></td>
+            <td>Pantaloni Casual</td>
+            <td>Lino e Canapa</td>
+            <td>45 Euro</td>
+        </tr>
+        <tr>
+            <td><img src="giacca.webp" alt="Giacca Antivento" width="60"></td>
+            <td>Giacca Antivento</td>
+            <td>Poliestere Riciclato</td>
+            <td>60 Euro</td>
+        </tr>
+        <tr>
+            <td><img src="calzini.webp" alt="Calzini Ecologici" width="60"></td>
+            <td>Calzini Ecologici</td>
+            <td>Fibra di Bambù</td>
+            <td>8 Euro</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2 id="registrazione">Unisciti alla nostra community</h2>
+    <p>Compila il modulo per registrarti ed essere sempre aggiornato sui nostri prodotti eco-sostenibili.</p>
+
+    <form id="myForm" target="_self" name="invioDati" method="GET" action="inviaDati.html">
+        <table align="center" class="form-table">
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="input_username" placeholder="Inserisci il tuo user" maxlength="20" required></td>
+            </tr> 
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="input_pwd" placeholder="Inserisci la tua password" required></td>
+            </tr>
+            <tr>
+                <td><label for="eta">Inserisci la tua età:</label></td>
+                <td><input type="number" id="eta" name="input_eta" placeholder="Inserisci la tua età" min="0" max="100"></td>
+            </tr>  
+            <tr>
+                <td><label for="email">Indirizzo mail:</label></td>
+                <td><input type="email" id="email" name="input_email" placeholder="Inserisci l'indirizzo email" required></td>
+            </tr>
+            <tr>
+                <td><label for="data">Scegli una data:</label></td>
+                <td><input type="date" id="data" name="input_data"></td>
+            </tr>
+            <tr>
+                <td><label for="testo">Descriviti:</label></td>
+                <td><textarea id="testo" name="input_testo" placeholder="Inserisci una tua breve descrizione" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Genere:</label></td>
+                <td>
+                    <input type="radio" id="genere_M" name="input_genere" value="M">
+                    <label for="genere_M">Maschile</label>
+                    <input type="radio" id="genere_F" name="input_genere" value="F">
+                    <label for="genere_F">Femminile</label>
+                    <input type="radio" id="genere_NN" name="input_genere" value="A">
+                    <label for="genere_NN">Altro</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Interessi / Hobby:</label></td>
+                <td>
+                    <input type="checkbox" id="cinema" name="hobby" value="cinema"> <label for="cinema">Cinema</label><br>
+                    <input type="checkbox" id="calcio" name="hobby" value="calcio"> <label for="calcio">Calcio</label><br>
+                    <input type="checkbox" id="disegno" name="hobby" value="disegno"> <label for="disegno">Disegno</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="titolo">Titolo di studio:</label></td>
+                <td>
+                    <select id="titolo" name="titolo">  
+                        <option value="primaria">Primaria</option>
+                        <option value="sec_primo">Secondaria primo grado</option>
+                        <option value="sec_sec">Secondaria secondo grado</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; padding-top: 15px;">
+                    <input type="submit" value="Invia i dati" class="btn">
+                    <input type="reset" value="Cancella" class="btn btn-reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h2 id="contatti">Come contattarci</h2>
+    <p>Scrivici subito a: <a href="mailto:info@ecovestiti.it">info@ecovestiti.it</a></p>
+
+</body>
+</html>
