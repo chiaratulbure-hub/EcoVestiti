@@ -85,3 +85,55 @@ hr {
     background-color: #c8e6c9;
     margin: 30px 0;
 }
+
+/* Stili specifici aggiunti per il Form */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.form-table td {
+    text-align: left;
+    border-bottom: none;
+    padding: 8px 12px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #1b5e20;
+}
+
+.btn-reset {
+    background-color: #757575;
+}
+
+.btn-reset:hover {
+    background-color: #424242;
+}

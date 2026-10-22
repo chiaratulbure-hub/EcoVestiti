@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
+    <meta charset="UTF-8">
     <title>EcoVestiti - Abbigliamento Sostenibile</title>
     <link rel="stylesheet" type="text/css" href="stile.css">
 </head>
@@ -16,7 +17,7 @@
     <p style="background-color: #2e7d32; padding: 14px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
         <a href="#informazioni" style="color: white; padding: 0 15px;">Perché sceglierci?</a> | 
         <a href="#listino" style="color: white; padding: 0 15px;">Il nostro listino</a> | 
-        <a href="#contatti" style="color: white; padding: 0 15px;">Contatti</a>
+        <a href="#registrazione" style="color: white; padding: 0 15px;">Registrati / Contatti</a>
     </p>
 
     <hr> 
@@ -75,8 +76,77 @@
 
     <hr>
 
+    <h2 id="registrazione">Unisciti alla nostra community</h2>
+    <p>Compila il modulo per registrarti ed essere sempre aggiornato sui nostri prodotti eco-sostenibili.</p>
+
+    <form id="myForm" target="_self" name="invioDati" method="GET" action="inviaDati.html">
+        <table align="center" class="form-table">
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="input_username" placeholder="Inserisci il tuo user" maxlength="20" required></td>
+            </tr> 
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="input_pwd" placeholder="Inserisci la tua password" required></td>
+            </tr>
+            <tr>
+                <td><label for="eta">Inserisci la tua età:</label></td>
+                <td><input type="number" id="eta" name="input_eta" placeholder="Inserisci la tua età" min="0" max="100"></td>
+            </tr>  
+            <tr>
+                <td><label for="email">Indirizzo mail:</label></td>
+                <td><input type="email" id="email" name="input_email" placeholder="Inserisci l'indirizzo email" required></td>
+            </tr>
+            <tr>
+                <td><label for="data">Scegli una data:</label></td>
+                <td><input type="date" id="data" name="input_data"></td>
+            </tr>
+            <tr>
+                <td><label for="testo">Descriviti:</label></td>
+                <td><textarea id="testo" name="input_testo" placeholder="Inserisci una tua breve descrizione" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Genere:</label></td>
+                <td>
+                    <input type="radio" id="genere_M" name="input_genere" value="M">
+                    <label for="genere_M">Maschile</label>
+                    <input type="radio" id="genere_F" name="input_genere" value="F">
+                    <label for="genere_F">Femminile</label>
+                    <input type="radio" id="genere_NN" name="input_genere" value="A">
+                    <label for="genere_NN">Altro</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Interessi / Hobby:</label></td>
+                <td>
+                    <input type="checkbox" id="cinema" name="hobby" value="cinema"> <label for="cinema">Cinema</label><br>
+                    <input type="checkbox" id="calcio" name="hobby" value="calcio"> <label for="calcio">Calcio</label><br>
+                    <input type="checkbox" id="disegno" name="hobby" value="disegno"> <label for="disegno">Disegno</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="titolo">Titolo di studio:</label></td>
+                <td>
+                    <select id="titolo" name="titolo">  
+                        <option value="primaria">Primaria</option>
+                        <option value="sec_primo">Secondaria primo grado</option>
+                        <option value="sec_sec">Secondaria secondo grado</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; padding-top: 15px;">
+                    <input type="submit" value="Invia i dati" class="btn">
+                    <input type="reset" value="Cancella" class="btn btn-reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
     <h2 id="contatti">Come contattarci</h2>
-    <p>Scrivici subito a: <a href="mail:info@ecovestiti.it">info@ecovestiti.it</a></p>
+    <p>Scrivici subito a: <a href="mailto:info@ecovestiti.it">info@ecovestiti.it</a></p>
 
 </body>
 </html>
