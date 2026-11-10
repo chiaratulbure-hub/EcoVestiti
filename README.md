@@ -43,7 +43,7 @@ Puoi consultare la guida completa per formattare i testi visitando la [Documenta
 
 ## Immagini e collegamenti
 
-[![Logo EcoVestiti](EcoVestiti.jpg)]
+[![Logo EcoVestiti](EcoVestiti.jpg)](https://github.com/chiaratulbure-hub/EcoVestiti.git)
 
 ### Contatti
 Hai domande o vuoi maggiori informazioni? Scrivici subito a: [info@ecovestiti.it](mailto:info@ecovestiti.it)
